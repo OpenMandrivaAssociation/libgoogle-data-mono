@@ -1,12 +1,13 @@
 %define name libgoogle-data-mono
 %define version 1.4.0.2
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: .NET library for the Google Data API 
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://google-gdata.googlecode.com/files/%{name}-%{version}.tar.gz
+Patch0: libgoogle-data-mono-1.4.0.2-fix-pkgconfig-file.patch
 License: Apache License
 Group: Development/Other
 Url: http://code.google.com/p/google-gdata/
@@ -66,6 +67,7 @@ make it easy to access data through Google Data APIs.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %make PREFIX=%_prefix
