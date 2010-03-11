@@ -1,6 +1,6 @@
 %define name libgoogle-data-mono
 %define version 1.4.0.2
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: .NET library for the Google Data API 
 Name: %{name}
@@ -68,7 +68,7 @@ make it easy to access data through Google Data APIs.
 %setup -q
 
 %build
-%make
+%make PREFIX=%_prefix
 
 %install
 rm -rf %{buildroot}
