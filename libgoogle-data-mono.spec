@@ -67,11 +67,10 @@ make it easy to access data through Google Data APIs.
 %prep
 %setup -q
 %apply_patches
-#gw: trying to work around a BS problem
-killall gpg-agent
 
 %build
-%make PREFIX=%_prefix
+#gw: trying to work around a BS problem, don't use parallel make
+make PREFIX=%_prefix
 
 %install
 rm -rf %{buildroot}
