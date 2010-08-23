@@ -67,6 +67,8 @@ make it easy to access data through Google Data APIs.
 %prep
 %setup -q
 %apply_patches
+#gw: trying to work around a BS problem
+killall gpg-agent
 
 %build
 %make PREFIX=%_prefix
