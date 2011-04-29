@@ -1,6 +1,6 @@
 %define name libgoogle-data-mono
 %define version 1.6.0.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: .NET library for the Google Data API 
 Name: %{name}
