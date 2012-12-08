@@ -1,7 +1,7 @@
 Summary: .NET library for the Google Data API 
 Name:    libgoogle-data-mono
 Version: 1.8.0.0
-Release: 2
+Release: 3
 Source0: http://google-gdata.googlecode.com/files/%{name}-%{version}.tar.gz
 License: Apache License
 Group: Development/Other
@@ -84,5 +84,39 @@ mv %buildroot%_prefix/lib/pkgconfig %buildroot%_datadir/
 %files devel
 %doc RELEASE_NOTES.HTML
 %_datadir/pkgconfig/*.pc
+
+
+
+
+%changelog
+* Fri May 20 2011 Nicolas Lécureuil <nlecureuil@mandriva.com> 1.8.0.0-2
++ Revision: 676311
+- Clean spec file for rpm5
+
+* Fri May 20 2011 Funda Wang <fwang@mandriva.org> 1.8.0.0-1
++ Revision: 676282
+- new version 1.8.0.0
+
+* Fri Apr 29 2011 Oden Eriksson <oeriksson@mandriva.com> 1.6.0.0-2
++ Revision: 660258
+- mass rebuild
+
+* Mon Aug 23 2010 Götz Waschk <waschk@mandriva.org> 1.6.0.0-1mdv2011.0
++ Revision: 572482
+- new version
+- drop patch
+- update file list
+
+* Thu Mar 11 2010 Götz Waschk <waschk@mandriva.org> 1.4.0.2-3mdv2010.1
++ Revision: 518276
+- fix pkgconfig file again
+
+* Thu Mar 11 2010 Götz Waschk <waschk@mandriva.org> 1.4.0.2-2mdv2010.1
++ Revision: 518267
+- fix path in pkgconfig files
+
+* Thu Mar 11 2010 Götz Waschk <waschk@mandriva.org> 1.4.0.2-1mdv2010.1
++ Revision: 518252
+- import libgoogle-data-mono
 
 
