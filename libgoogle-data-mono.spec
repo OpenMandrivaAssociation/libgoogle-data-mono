@@ -1,7 +1,7 @@
 Summary:	.NET library for the Google Data API 
 Name:		libgoogle-data-mono
 Version:	1.8.0.0
-Release:	8
+Release:	9
 License:	Apache License
 Group:		Development/Other
 Url:		http://code.google.com/p/google-gdata/
