@@ -60,7 +60,7 @@ make it easy to access data through Google Data APIs.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 #gw:	trying to work around a BS problem, don't use parallel make
