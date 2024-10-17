@@ -4,7 +4,7 @@ Version:	1.8.0.0
 Release:	12
 License:	Apache License
 Group:		Development/Other
-Url:		http://code.google.com/p/google-gdata/
+Url:		https://code.google.com/p/google-gdata/
 Source0:	http://google-gdata.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(mono)
