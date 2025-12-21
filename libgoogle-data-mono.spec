@@ -7,6 +7,7 @@ Group:		Development/Other
 Url:		https://code.google.com/p/google-gdata/
 Source0:	http://google-gdata.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	pkgconfig(mono)
 
 %description
